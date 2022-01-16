@@ -1,0 +1,5 @@
+A JSON parser implemented with Esrap.
+
+It cannot handle too big JSON file, like [[https://github.com/json-iterator/test-data/blob/master/large-file.json][json-iterator/test-data]]. SBCL would just hang. Except for this case, it passes all the test cases defined in [[https://github.com/nst/JSONTestSuite][nst/JSONTestSuite]].
+
+Esrap is not so good when dealing with deeply nested data structure with left-recursive rules. Other than that, it is a very good library to write parsers.
